@@ -2,7 +2,7 @@
 
 A search engine in plain Python (no search library). It indexes a folder of `.txt` files
 with an inverted index, ranks results with BM25 written from its formula, and measures
-precision and recall on 16 test queries. No API key needed.
+precision and recall on 19 test queries. No API key needed.
 
 ## Run
 
@@ -36,13 +36,15 @@ python -m unittest discover -s tests -t .
 ## Results (k = 3)
 
 ```
-mean precision@3 = 0.417, mean recall@3 = 1.000 over 16 queries
+mean precision@3 = 0.404, mean recall@3 = 1.000 over 19 queries
 ```
 
 Recall is perfect: every relevant document is in the top 3 for every query. Precision looks
 low only because most queries have one relevant document, so the best possible P@3 is 0.33
-for them; my average best possible precision is 0.42, and I reach it. Extra results show up
-because of shared words: "send money **from** phone" also returns `isro.txt` ("launch from")
+for them; my average best possible precision is 0.40, and I reach it. Extra results show up
+because of shared words.
+
+**A query that works badly:** "send money **from** phone" also returns `isro.txt` ("launch from")
 since "from" is not in my stop word list, and "blood **sugar** control" also returns `tea.txt`
 (masala tea has sugar). BM25 matches words, not meaning, so it cannot tell these apart.
 
