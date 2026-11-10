@@ -1,0 +1,18 @@
+[
+ {"query": "monsoon rain farmers", "relevant": ["monsoon.txt", "rice.txt"]},
+ {"query": "rice paddy water", "relevant": ["rice.txt"]},
+ {"query": "IPL cricket tournament", "relevant": ["cricket.txt"]},
+ {"query": "grandmaster board game", "relevant": ["chess.txt"]},
+ {"query": "programming language", "relevant": ["python.txt", "java.txt"]},
+ {"query": "send money from phone", "relevant": ["upi.txt"]},
+ {"query": "interest rate deposit bank", "relevant": ["banking.txt"]},
+ {"query": "book train tickets online", "relevant": ["train.txt"]},
+ {"query": "city metro smart card", "relevant": ["metro.txt"]},
+ {"query": "Assam tea leaves", "relevant": ["tea.txt"]},
+ {"query": "blood sugar control", "relevant": ["diabetes.txt"]},
+ {"query": "electricity from sunlight", "relevant": ["solar.txt"]},
+ {"query": "Moon mission space agency", "relevant": ["isro.txt"]},
+ {"query": "space telescope stars", "relevant": ["telescope.txt", "isro.txt"]},
+ {"query": "reduce stress breathing", "relevant": ["yoga.txt"]},
+ {"query": "QR code payment", "relevant": ["upi.txt", "metro.txt"]}
+]

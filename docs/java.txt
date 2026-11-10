@@ -1,0 +1,1 @@
+Java is a programming language that runs on the Java Virtual Machine. It is used for Android apps and large business systems. Java code is compiled to bytecode before it runs.
